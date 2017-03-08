@@ -2,7 +2,8 @@ h1 {
     color: aquamarine;
 }
 
-body{
+body {
+    padding: 10px;
     font-family: "Agency FB";
 }
 
