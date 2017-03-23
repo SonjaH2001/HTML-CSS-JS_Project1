@@ -12,13 +12,14 @@ body {
 .cookieWord {
     color: cornflowerblue;
 }
-div {
+.cookie_type {
     align-content: center;
     text-align: center;
-    width: 50%;
+    width: 80%;
     margin: auto;
+    border: 1px solid black;
 }
-img {
-
-    width: 50%;
+.cookie_type img {
+    width: 100%;
+    /*border: 1px solid black;*/
 }

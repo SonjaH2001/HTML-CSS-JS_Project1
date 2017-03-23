@@ -14,47 +14,65 @@
 <!--todo Does Bootstrap need to be in a container?????
 <!--todo advanced&bootstrap and responsive design-->
 <body>
+
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="page-header">
+        <!--<div class="col">-->
+            <h1>It's <span class="cookieWord">Cookie Time</span> and we have all of your cookie needs!</h1>
+    </div>
+            <!--<h2>Heading</h2>-->
     <!--em span-->
-    <h1>It's <span class="cookieWord">Cookie Time</span> and we have all of your cookie needs!</h1>
+    <!--<h1>It's <span class="cookieWord">Cookie Time</span> and we have all of your cookie needs!</h1>-->
     <!--put it in a form and use form controls-->
     <form action="http://localhost:63342/HTML-CSS-JS_Project1/HTML.html?_ijt=tke4g7f1o68ovj9c8i4rjksj1t" method="get">
         <!--cookie divs-->
-        <!--todo maybe put into a fieldset?????NOOOOO!-->
+
         <!--todo keep it simple.  just make a fact page. order page will be seperate-->
-        <div><h3>Chocolate Minty Delights</h3>
-            <!--add correct image-->
-            <img src="Images/stack-choc-choc.jpg">
-            <!--todo specify picture size. be consistent-->
-            <p>Ingredients: flour, sugar, brown sugar, mint flavoring,</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="cookie_type"><h3>Chocolate Minty Delights</h3>
+                    <!--add correct image-->
+                    <img src="Images/stack-choc-choc.jpg">
+                    <!--todo specify picture size. be consistent-->
+                    <p>Ingredients: flour, sugar, brown sugar, mint flavoring,</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cookie_type"><h3>Chocolate Chip Peanut Butter Dream</h3>
+                    <!--add correct image-->
+                    <!--todo specify picture size. be consistent-->
+                    <img src="Images/stock-photo-chocolate-chip-cookie-on-white-169652402.jpg">
+                    <p>Ingredients: flour, sugar, brown sugar, mint flavoring,</p>
+                </div>
+            </div>
         </div>
-            <hr />
-        <div><h3>Chocolate Chip Peanut Butter Dream</h3>
-             <!--add correct image-->
-            <!--todo specify picture size. be consistent-->
-            <img src="Images/stock-photo-chocolate-chip-cookie-on-white-169652402.jpg">
-            <p>Ingredients: flour, sugar, brown sugar, mint flavoring,</p>
-        </div>
-            <hr />
-        <div><h3>Coconut Macaroons</h3>
-            <!--add correct image-->
-            <!--todo specify picture size. be consistent-->
-            <img src="Images/macaroon-1680698_960_720.png">
-            <p>Ingredients: flour, sugar, brown sugar, mint flavoring,</p>
-        </div>
-            <hr />
-        <div><h3>Suger Hill Gang</h3>
-            <!--add correct image-->
-            <!--todo specify picture size. be consistent-->
-            <img src="Images/cookies-648348__340.jpg">
-            <p>Ingredients: flour, sugar, brown sugar, mint flavoring,</p>
-        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="cookie_type"><h3>Coconut Macaroons</h3>
+                    <!--add correct image-->
+                    <!--todo specify picture size. be consistent-->
+                    <img src="Images/macaroon-1680698_960_720.png">
+                    <p>Ingredients: flour, sugar, brown sugar, mint flavoring,</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="cookie_type"><h3>Suger Hill Gang</h3>
+                    <!--add correct image-->
+                    <!--todo specify picture size. be consistent-->
+                    <img src="Images/cookies-648348__340.jpg">
+                    <p>Ingredients: flour, sugar, brown sugar, mint flavoring,</p>
+                </div>
+            </div>
 
-        <!--<fieldset>-->
-            <!--<legend>Chocolaty Mint Delights</legend>-->
-            <!--<p>Ingredients: flour, sugar,g brown sugar, mint flavoring, chocolate, salt, natural flavorin</p>-->
-        <!--</fieldset>-->
-
+        </div>
+        <div class="page-footer">
+            <h4><a href="about.html">about</a></h4>
+        </div>
     </form>
 
+
+    <!--todo/ javasript&#45;&#45;meaningful but not annoying maybe pop up allergy list maybe-->
+</div>
 </body>
 </html>
