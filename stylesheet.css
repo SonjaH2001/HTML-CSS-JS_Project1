@@ -1,6 +1,6 @@
 h1 {
     color: aquamarine;
-    align-content: center;
+    text-align: center;
 }
 
 body {
@@ -15,4 +15,10 @@ body {
 div {
     align-content: center;
     text-align: center;
+    width: 50%;
+    margin: auto;
+}
+img {
+
+    width: 50%;
 }
