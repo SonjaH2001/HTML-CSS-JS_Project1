@@ -1,17 +1,19 @@
+/*Center the header and the text in it*/
 h1 {
     color: aquamarine;
     text-align: center;
 }
-
+/*center and pad the body element*/
 body {
     padding: 20px;
     font-family: "Agency FB";
     align-content: center;
 }
-
+/*highlight the word cookie*/
 .cookieWord {
     color: cornflowerblue;
 }
+/*format the cookie_type class, dynamic sizing?*/
 .cookie_type {
     align-content: center;
     text-align: center;
@@ -19,6 +21,7 @@ body {
     margin: auto;
     border: 1px solid black;
 }
+/*size the images*/
 .cookie_type img {
     width: 100%;
     /*border: 1px solid black;*/
