@@ -1,6 +1,6 @@
 /*Center the header and the text in it*/
 h1 {
-    color: #c055ff;
+    color: #27d5ff;
     text-align: center;
 }
 /*center and pad the body element*/
@@ -12,6 +12,7 @@ body {
 /*highlight the word cookie*/
 .cookieWord {
     color: cornflowerblue;
+    font-weight: bold;
 }
 /*format the cookie_type class, dynamic sizing?*/
 .cookie_type {
@@ -31,4 +32,11 @@ body {
 .page-footer {
     text-align: end;
     padding-bottom: 50px;
+}
+
+
+/*//keep text consistent*/
+p {
+    font-family: "Agency FB";
+    text-align: center;
 }
