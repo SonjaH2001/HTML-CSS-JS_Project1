@@ -1,6 +1,6 @@
 /*Center the header and the text in it*/
 h1 {
-    color: aquamarine;
+    color: #c055ff;
     text-align: center;
 }
 /*center and pad the body element*/
@@ -25,4 +25,10 @@ body {
 .cookie_type img {
     width: 100%;
     /*border: 1px solid black;*/
+}
+
+/* style the 'about' link8*/
+.page-footer {
+    text-align: end;
+    padding-bottom: 50px;
 }
