@@ -33,7 +33,16 @@ body {
     text-align: end;
     padding-bottom: 50px;
 }
+/*style the class*/
+.order_now {
+    text-align: center;
+    round-clip: true;
+}
 
+@keyframes flash {
+    from {color: cornflowerblue;}
+    to {color: magenta;}
+}
 
 /*//keep text consistent*/
 p {
