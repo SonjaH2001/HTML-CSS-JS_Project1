@@ -7,6 +7,9 @@ var bodyParser = require('body-parser');
 //add mongo and assert
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
+//add flash and session
+var flash = require('express-flash');
+var sessio = require('express-session');
 
 
 var index = require('./routes/index');
