@@ -31,12 +31,12 @@ MongoClient.connect(url,function(err, db){
     console.log('connected to MongoDB')//success message
     //call to cookie table in cookieDB database
     app.use(function (req,res,next) {
-      req.task_col = db.collection('cookieTable');
+      req.task_col = db.collection('cookieTable');//what is task_col?
       next()
     })
     //call to order table in cookieDB database
     app.use(function (req,res,next) {
-      req.task_col = db.collection('orderTable');
+      req.task_col = db.collection('orderTable');//what is task_col??
       next()
     })
 });
