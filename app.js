@@ -9,7 +9,7 @@ var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 //add flash and session
 var flash = require('express-flash');
-var sessio = require('express-session');
+var session = require('express-session');
 
 
 var index = require('./routes/index');
