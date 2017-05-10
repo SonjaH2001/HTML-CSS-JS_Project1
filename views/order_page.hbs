@@ -27,10 +27,26 @@
     order looks good? (show order totals.)
     let's get the shipping details
 </h3>
+<hr>
+
 
 <h3>
     now let's get some payment deets
-    submit button. (goes to outside processor)
-    returns a confirmation "thank you"
+    (submit button. payment goes to outside processor)
+    needs to return a confirmation "thank you"
 </h3>
-<p>TESTETEAFSF ASD</p>
+
+<!--needs some css help-->
+<div class="addShippingDetails">
+    <form id="addshipping_form" action="add" method="POST">
+        <input id="addfirstname_text" type="text" name="text" placeholder="First Name" required><br><br>
+        <input id="addlastname_text" type="text" name="text" placeholder="Last Name" required><br><br>
+        <input id="addstreetaddress_text" type="text" name="text" placeholder="Street Address" required><br><br>
+        <input id="addcity_text" type="text" name="text" placeholder="City" required><br><br>
+        <input id="addstate_text" type="text" name="text" placeholder="State" required><br><br>
+        <input id="addzip_text" type="text" name="text" placeholder="Zip Code" required><br><br>
+        <input id="addemail_text" type="text" name="text" placeholder="Email address" required><br><br>
+        <input id="addphone_text" type="text" name="text" placeholder="Phone Number"><br><br><br><br>
+        <input id="addtask_button" type="submit" value="add"><br><br>
+    </form>
+</div>
