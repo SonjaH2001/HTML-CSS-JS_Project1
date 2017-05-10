@@ -1,5 +1,5 @@
 <h1>This is the cookie order page</h1>
-<p>Please check back as we build this</p>
+<p>please check back frequently, page coming soon...</p>
 
 <!--todo--each cookie needs a small image and cookie description, pack size.-->
 <!--use a dropdown box for quantity validation (1-10).-->
@@ -24,21 +24,21 @@
 </h6>
 
 <h3>
-    order looks good? (show order totals.)
-    let's get the shipping details
+    <p>Is your order total correct?</p>
+    <p>Please continue on to order details, below</p>
 </h3>
 <hr>
 
 
 <h3>
-    now let's get some payment deets
-    (submit button. payment goes to outside processor)
+    <p>Order Details</p>
+    (submit button. payment will go to outside processor)
     needs to return a confirmation "thank you"
 </h3>
 
 <!--needs some css help-->
-<div class="addShippingDetails">
-    <form id="addshipping_form" action="add" method="POST">
+<div class="addOrderDetails">
+    <form id="addOrder_form" action="add" method="POST">
         <input id="addfirstname_text" type="text" name="firstName" placeholder="First Name" required><br><br>
         <input id="addlastname_text" type="text" name="lastName" placeholder="Last Name" required><br><br>
         <input id="addAddress_text" type="text" name="address" placeholder="Street Address, City, State" required><br><br>
@@ -47,6 +47,6 @@
         <!--<input id="addzip_text" type="text" name="zipCode" placeholder="Zip Code" required><br><br>-->
         <input id="addemail_text" type="text" name="email" placeholder="Email address" required><br><br>
         <input id="addphone_text" type="text" name="phone" placeholder="Phone Number"><br><br><br><br>
-        <input id="addtask_button" type="submit" value="add"><br><br>
+        <input id="addOrder_button" type="submit" value="Order My Cookies"><br><br>
     </form>
 </div>
