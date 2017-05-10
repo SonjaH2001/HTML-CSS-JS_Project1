@@ -6,10 +6,10 @@ var mongoose = require('mongoose');
 var orderSchema = new mongoose.Schema({
     firstName: { type: String, required: true, uniqueCaseInsensitive: true },
     lastName: { type: String, required: true, uniqueCaseInsensitive: true },
-    streetAddress: { type: String, required: true, uniqueCaseInsensitive: true },
-    city: { type: String, required: true, uniqueCaseInsensitive: true },
-    state: { type: String, required: true, uniqueCaseInsensitive: true },
-    zipCode: { type: String, required: true, uniqueCaseInsensitive: true },
+    address: { type: String, required: true, uniqueCaseInsensitive: true },
+    // city: { type: String, required: true, uniqueCaseInsensitive: true },
+    // state: { type: String, required: true, uniqueCaseInsensitive: true },
+    // zipCode: { type: String, required: true, uniqueCaseInsensitive: true },
     email: { type: String, required: true, uniqueCaseInsensitive: true },
     phone: { type: String, required: false, uniqueCaseInsensitive: true }
 });
