@@ -39,13 +39,17 @@ body {
     round-clip: true;
 }
 
-@keyframes flash {
+@keyframes ordernow {
     from {color: cornflowerblue;}
-    to {color: magenta;}
+    to {color: #ff376e;}
 }
 
 /*//keep text consistent*/
 p {
     font-family: "Agency FB";
     text-align: center;
+}
+/*testing*/
+.addShippingDetails {
+    background-color: cornflowerblue;/
 }
