@@ -1,6 +1,9 @@
+//order database
+//gets shipping details from user
+
 //use mongoose
 var mongoose = require('mongoose');
-// var uniqueValidator = require('mongoose-unique-validator');
+var uniqueValidator = require('mongoose-unique-validator');//future use, date order validation
 
 // represents each order
 var orderSchema = new mongoose.Schema({
