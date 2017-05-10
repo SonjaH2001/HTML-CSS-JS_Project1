@@ -22,8 +22,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 //MongoDB setup
-var mongo_pw = process.env.MONGO_PW;
-var url = 'mongodb://@localhost:27017/cookieDB';
+// var mongo_pw = process.env.MONGO_PW;
+// update MongoDB setup to use an environment variable
+var url = process.env.MONGO_DB_URL
+// var url = mongodb://<dbuser>:<dbpassword>@ds133961.mlab.com:33961/cookie_db
+// var url = 'mongodb://@localhost:27017/cookieDB';
 MongoClient.connect(url,function(err, db){
 
   console.log('errors? ' + err);//show error message
