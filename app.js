@@ -6,6 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 //add mongo and assert
 var MongoClient = require('mongodb').MongoClient;
+// add mongoose
+var mongoose = require('mongoose');
 var assert = require('assert');
 //add flash and session
 var flash = require('express-flash');
@@ -24,24 +26,26 @@ app.set('view engine', 'hbs');
 //MongoDB setup
 // var mongo_pw = process.env.MONGO_PW;
 // update MongoDB setup to use an environment variable
-var url = process.env.MONGO_DB_URL
+var url = process.env.MONGO_DB_URL;
+//connecting to database
+mongoose.connect(url);
 // var url = mongodb://<dbuser>:<dbpassword>@ds133961.mlab.com:33961/cookie_db
 // var url = 'mongodb://@localhost:27017/cookieDB';
-MongoClient.connect(url,function(err, db){
+// MongoClient.connect(url,function(err, db){
 
-  console.log('errors? ' + err);//show error message
-    assert(!err); //crash is error connecting
-    console.log('connected to MongoDB')//success message
-    //call to cookie table in cookieDB database
-    app.use(function (req,res,next) {
-      req.cookie_collection = db.collection('cookieTable');
-      next()
-    })
-    //call to order table in cookieDB database
-    app.use(function (req,res,next) {
-      req.order_collection = db.collection('orderTable');
-      next()
-    })
+  // console.log('errors? ' + err);//show error message
+  //   assert(!err); //crash is error connecting
+  //   console.log('connected to MongoDB')//success message
+  //   //call to cookie table in cookieDB database
+  //   app.use(function (req,res,next) {
+  //     req.cookie_collection = db.collection('cookieTable');
+  //     next()
+  //   })
+  //   //call to order table in cookieDB database
+  //   app.use(function (req,res,next) {
+  //     req.order_collection = db.collection('orderTable');
+  //     next()
+  //   })
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -76,6 +80,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-});
+// });
 
 module.exports = app;
