@@ -1,9 +1,19 @@
 var express = require('express');
 var router = express.Router();
+//add models files
+// var Order = require('../models/order');
+// var Cookie  = require('../models/cookie');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  // res.render('index');
+
+  Order,find(function(err,orders){
+      if (err) {
+          return next(err);
+      }
+      res.render('index', {orders: orders});
+  })
 });/*end of home page*/
 
 /*GET about page*/
@@ -18,6 +28,14 @@ router.get('/order_page', function(req, res, next) {
 
 // POST order_page shipping input
 router.post('/order_page', function(req, res, next) {
+    // console.log(req.body)
+    // var order = Order(req.body);
+    // order.save(function(err, neworder) {
+    //     if (err){
+    //         return next(err);
+    //     }
+    //     return res.redirect('/')
+    // });
 
     req.order_collection.updateOne(
         { _id : ObjectID(req.body._id) },
@@ -36,5 +54,5 @@ router.post('/order_page', function(req, res, next) {
             req.flash('info', 'Thank you for your order, cookies coming soon!');
             return res.redirect('/')
         })
-})
+});
 module.exports = router;
